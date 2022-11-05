@@ -1,0 +1,16 @@
+@import './base.css';
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.8s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
