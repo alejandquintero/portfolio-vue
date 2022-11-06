@@ -1,11 +1,11 @@
 <template>
     <article class="article">
       <div class="container-img">
-        <img alt="Foto de Alejandro Quintero" class="img-profile" src="@/assets/cuadrado-profile.webp"/>
+        <img alt="Foto de Alejandro Quintero" class="img-profile" src="@/assets/cuadrado-profile-dark.webp"/>
       </div>
       <div class="paragraphs-profile">
         <h1 class="profile-title">Hola<span class="color-dark-blue">.</span><br/> Soy Alejandro</h1>
-        <p class="paragraph">🧑‍💻​ Full Stack developer actualmente en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo.</a> Amo el café ☕​, me inclino hacia el Backend y curiosamente me gusta el CSS 😅​.</p>
+        <p class="paragraph">🧑‍💻​ Full Stack Developer actualmente en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo.</a> Amo el café ☕​, me inclino hacia el Backend y curiosamente me gusta el CSS 😅​.</p>
       </div>
     </article>
 </template>
@@ -59,10 +59,10 @@
 .container-img{
   position: relative;
   min-width: 250px;
-  /* width: 50%; */
   max-width: 400px;
   overflow: hidden;
   border-radius: 50%;
+  /* width: 50%; */
   /* border: 1px solid #d9d9d97b; */
   box-shadow: 0 0 25px var(--color-bg-dark-blue);
   animation: expand-image .8s ;
