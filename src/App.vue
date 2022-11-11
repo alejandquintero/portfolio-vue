@@ -2,12 +2,14 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Profile from './components/Profile.vue'
 import NavigationBar from './components/NavigationBar.vue'
+import Timeline from './components/Timeline.vue'
 
 export default{
   name : "App",
   components : {
     Profile,
-    NavigationBar
+    NavigationBar,
+    Timeline
   },
   data(){
     return{
@@ -28,7 +30,8 @@ export default{
       </section>
     
       <section class="section section-2" id="about-me">
-        <h2>Section 2</h2>
+        <h2>Timeline</h2>
+        <Timeline></Timeline>
       </section>
       
       <section class="section section-3" id="contact">
@@ -53,6 +56,8 @@ section{
   justify-content: center;
   align-items: center;
   padding: 24px;
+  color: var(--color-font-dark);
+  font-family: 'Geomanist';
   /* background-image: linear-gradient(90deg, #2B4263 25%, #20252c 25%);
   background-image: linear-gradient(90deg, #8CA1BF 25%, #314D73 25%); */
   /* background-image: linear-gradient(90deg, var(--color-bg-dark-blue), var(--color-bg-dark)); */
@@ -67,11 +72,13 @@ section{
   color: var(--color-bg-dark-blue);
 }
 
-/* .section-2,
-.section-3{
-  background-image: none;
+.section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-
+/*
 .section-2{
   background-color: var(--color-bg-dark-blue) ;
 }
@@ -83,8 +90,7 @@ section{
 .paragraph{
   font-family: 'Geomanist';
   font-size: 1.2rem;
-  color: var(--color-font-dark);
-  color: #b3b3b3;
+  color: var(--color-font-dark-text-paragraph);
 }
 
 .relevant{
@@ -93,7 +99,6 @@ section{
   position: relative;
   transition: transform .2s ease-in-out;
   justify-content: center;
-  /* color: var(--color-font-dark) */
 }
 
 .relevant::before{
