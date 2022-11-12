@@ -62,23 +62,9 @@
   max-width: 400px;
   overflow: hidden;
   border-radius: 50%;
-  /* width: 50%; */
-  /* border: 1px solid #d9d9d97b; */
-  box-shadow: 0 0 25px var(--color-bg-dark-blue);
+  box-shadow: 0 0 25px #8ca1bf;
   animation: expand-image .8s ;
 }
-
-.border-img{
-  content: '';
-  position: relative;
-  width: 400px;
-  height: 400px;
-  z-index: 10;
-  transform: translateX(400px);
-  background-color: red;
-
-}
-
 
 .profile-title{
   font-family: 'Monument';

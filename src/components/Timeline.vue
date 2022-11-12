@@ -1,56 +1,13 @@
 <template>
-    <article class="timeline">
+    <article class="timeline" v-for="(job, index) in jobs" :key="index" >
         <div class="year">
-            <!-- {{ data.dStart }} - {{ data.dEnd }} -->
-            2022 - Ahora
+            {{ job.startDate }} - {{ job.endDate }}
         </div>
         <div class="job">
-            <h4>Full Stack Developer</h4>
-            <h5>Tigloo</h5>
-            <ul>
-                <li>
-                   Diseño y desarrollo de API REST con PHP 8 y Symfony 5.
-                </li>
-                <li>
-                   Desarrollo de aplicación web consumiendo APIs con AngularJS.
-                </li>
-                <li>
-                   Soporte y mantenimiento de proyectos internos.
-                </li>
-                <li>
-                    Implementación de nuevas funcionalidades.
-                </li>
-            </ul>
-        </div>
-    </article>
-    <article class="timeline">
-        <div class="year">
-            2022 - Ahora
-        </div>
-        <div class="job">
-            <h4>Full Stack Developer</h4>
-            <h5>Tigloo</h5>
-            <ul>
-                <li>
-                   Diseño y desarrollo de API REST con PHP 8 y Symfony 5.
-                </li>
-                <li>
-                   Desarrollo de aplicación web consumiendo APIs con AngularJS.
-                </li>
-            </ul>
-        </div>
-    </article>
-    <article class="timeline">
-        <div class="year">
-            2022 - Ahora
-        </div>
-        <div class="job">
-            <h4>Full Stack Developer</h4>
-            <h5>Tigloo</h5>
-            <ul>
-                <li>
-                   Diseño y desarrollo de API REST con PHP 8 y Symfony 5.
-                </li>
+            <h4>{{ job.jobTitle }}</h4>
+            <h5>{{ job.company }}</h5>
+            <ul v-for="(item, index) in job.items" :key="index">
+                <li> {{ item }} </li>
             </ul>
         </div>
     </article>
@@ -58,8 +15,10 @@
   
   <script>
       export default{
-          name: "Timeline"
-          
+          name: "Timeline",
+          props:{
+            jobs : Object          
+        }
       }
   </script>
   

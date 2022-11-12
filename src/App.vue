@@ -1,16 +1,18 @@
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+// import { RouterLink, RouterView } from 'vue-router'
 import Profile from './components/Profile.vue'
 import NavigationBar from './components/NavigationBar.vue'
 import Timeline from './components/Timeline.vue'
+import AboutMe from './components/AboutMe.vue'
 
 export default{
   name : "App",
   components : {
     Profile,
     NavigationBar,
-    Timeline
-  },
+    Timeline,
+    AboutMe
+},
   data(){
     return{
     }
@@ -30,8 +32,7 @@ export default{
       </section>
     
       <section class="section section-2" id="about-me">
-        <h2>Timeline</h2>
-        <Timeline></Timeline>
+        <AboutMe></AboutMe>
       </section>
       
       <section class="section section-3" id="contact">
@@ -52,21 +53,14 @@ h1{
 
 section{
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
   padding: 24px;
   color: var(--color-font-dark);
   font-family: 'Geomanist';
-  /* background-image: linear-gradient(90deg, #2B4263 25%, #20252c 25%);
-  background-image: linear-gradient(90deg, #8CA1BF 25%, #314D73 25%); */
-  /* background-image: linear-gradient(90deg, var(--color-bg-dark-blue), var(--color-bg-dark)); */
   background-color: var(--color-bg-dark) ;
 }
-/* 
-.container-content{
-   padding: 24px;
-} */
 
 .color-dark-blue{
   color: var(--color-bg-dark-blue);
@@ -78,14 +72,10 @@ section{
   justify-content: flex-start;
   align-items: center;
 }
-/*
-.section-2{
-  background-color: var(--color-bg-dark-blue) ;
-}
 
-.section-3{
-  background-color: var(--color-bg-dark) ;
-} */
+.section:not(#home){
+  padding-top: 88px;
+}
 
 .paragraph{
   font-family: 'Geomanist';
