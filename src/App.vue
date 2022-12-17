@@ -4,6 +4,7 @@ import Profile from './components/Profile.vue'
 import NavigationBar from './components/NavigationBar.vue'
 import Timeline from './components/Timeline.vue'
 import AboutMe from './components/AboutMe.vue'
+import ReposGitHub from './components/ReposGitHub.vue'
 
 export default{
   name : "App",
@@ -11,7 +12,8 @@ export default{
     Profile,
     NavigationBar,
     Timeline,
-    AboutMe
+    AboutMe,
+    ReposGitHub
 },
   data(){
     return{
@@ -36,7 +38,7 @@ export default{
       </section>
       
       <section class="section section-3" id="contact">
-        <h2>Section 3</h2>
+        <ReposGitHub></ReposGitHub>
       </section>
     </div>
   </Transition>
