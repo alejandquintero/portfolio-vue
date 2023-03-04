@@ -1,41 +1,15 @@
-# vue-portfolio
+# Portafolio en VueJs
 
-This template should help get you started developing with Vue 3 in Vite.
+Segunda versión de mi portafolio desarrollado en Vue.
 
-## Recommended IDE Setup
+Se han optimizado imágenes, nueva paleta de colores y ahora con timeline 🕛😊. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+El renderizado de los proyectos ahora está conectado con mi repositorio de GitHub.
 
-## Customize configuration
+![image](https://user-images.githubusercontent.com/91087042/222900625-1996b421-b1f1-4dd5-b50e-718f984832c4.png)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+![image](https://user-images.githubusercontent.com/91087042/222900638-2c357657-92b0-4fa3-bd35-dc596024e2f2.png)
 
-## Project Setup
+![image](https://user-images.githubusercontent.com/91087042/222900647-ae74c972-82fa-4f08-80e4-b041a43eb347.png)
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
