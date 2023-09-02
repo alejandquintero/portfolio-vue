@@ -16,22 +16,22 @@
                 icons : [
                     {
                         href: 'http://www.linkedin.com/in/alejandroquinteroe',
-                        img : '/src/assets/linkedin.webp',
+                        img : 'logos/linkedin.webp',
                         alt : 'LinkedIn icon'
                     },
                     {
                         href: 'https://github.com/alejandquintero',
-                        img : '/src/assets/github.webp',
+                        img : 'logos/github.webp',
                         alt : 'GitHub icon'
                     },  
                     {
                         href: 'mailto:alejandquinteroe@gmail.com',
-                        img : '/src/assets/email.webp',
+                        img : 'logos/email.webp',
                         alt : 'Email icon'
                     }, 
                     {
                         href: 'tel:602547908',
-                        img : '/src/assets/phone.webp',
+                        img : 'logos/phone.webp',
                         alt : 'Phone icon'
                     }
                 ]
