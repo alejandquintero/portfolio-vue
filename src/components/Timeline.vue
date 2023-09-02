@@ -6,8 +6,11 @@
         <div class="job">
             <h4>{{ job.jobTitle }}</h4>
             <h5>{{ job.company }}</h5>
-            <ul v-for="(item, index) in job.items" :key="index">
-                <li> {{ item }} </li>
+            <ul>
+                <li v-for="(item, index) in job.items" :key="index"> {{ item }} </li>
+                <li class="container-img">
+                    <img v-for="(logo, index) in job.logos" :key="index" :src="logo">
+                </li>
             </ul>
         </div>
     </article>
@@ -44,9 +47,15 @@
         margin-bottom: 16px;
     }
 
+    .container-img{
+        display: flex;
+        gap: 10px;
+        width: 35px;
+    }
+
 
     .timeline{
-        width: 800px;
+        width: 100%;
         font-family: 'Geomanist';
         font-size: 1.2rem;
         color: var(--color-font-dark-text-paragraph);
@@ -83,7 +92,7 @@
         flex-direction: column;
         justify-content: flex-start;
         gap: 5px;
-        padding: 2rem 0rem 2rem 2rem;
+        padding: 2rem 0rem 0rem 2rem;
         width: 70%;
         text-align: left;
     }

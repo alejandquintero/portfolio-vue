@@ -1,30 +1,18 @@
 <template>
     <article class="article">
       <div class="container-img">
-        <img alt="Foto de Alejandro Quintero" class="img-profile" src="@/assets/cuadrado-profile-dark.webp"/>
+        <img alt="Foto de Alejandro Quintero" class="img-profile" src="@/assets/profile-home.webp"/>
       </div>
       <div class="paragraphs-profile">
         <h1 class="profile-title">Hola<span class="color-dark-blue">.</span><br/> Soy Alejandro</h1>
-        <p class="paragraph">🧑‍💻​ Full Stack Developer actualmente en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo.</a> Amo el café ☕​, me inclino hacia el Backend y curiosamente me gusta el CSS 😅​.</p>
+        <p class="paragraph">🧑‍💻​ Full Stack Developer en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo</a> y 🧑‍🎓 estudiante en <a href="https://www.42madrid.com/" target="_blank" class="relevant color-dark-blue">@42Madrid</a>. Amo el café ☕​, me gusta el Backend y curiosamente me puedo divertir con CSS.😅​.</p>
       </div>
     </article>
 </template>
 
 <script>
     export default{
-        name: "Profile",
-        data(){
-            return {
-                data : [
-                  'logos/css.webp',
-                  'logos/html.webp',
-                  'logos/js.webp',
-                  'logos/mysql.webp',
-                  'logos/php.webp',
-                  'logos/vscode.svg'
-                ]
-            }
-        }
+        name: "Profile"
     }
 </script>
 
@@ -33,6 +21,7 @@
 .article{
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
   max-width: 1200px;
   gap: 60px;
@@ -59,7 +48,7 @@
 .container-img{
   position: relative;
   min-width: 250px;
-  max-width: 400px;
+  max-width: 300px;
   overflow: hidden;
   border-radius: 50%;
   box-shadow: 0 0 25px #8ca1bf;
@@ -69,7 +58,7 @@
 .profile-title{
   font-family: 'Monument';
   color: var(--color-font-dark);
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 16px;
 }
 .subtitle{
@@ -90,8 +79,16 @@
 }
 
 @media screen and (min-width: 768px) {
+  
+}
+
+@media screen and (min-width: 900px) {
     .article{
         flex-direction: row;
+    }
+
+    .container-img{
+      max-width: 400px;
     }
     
     .profile-title{
@@ -100,11 +97,8 @@
     }
 }
 
+
 @media screen and (min-width: 1400px) {
-    .profile-title{
-        /* line-height: 100px;
-        font-size: 5rem; */
-    }
 }
 
 </style>

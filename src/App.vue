@@ -5,6 +5,8 @@ import NavigationBar from './components/NavigationBar.vue'
 import Timeline from './components/Timeline.vue'
 import AboutMe from './components/AboutMe.vue'
 import ReposGitHub from './components/ReposGitHub.vue'
+import Contact from './components/Contact.vue'
+
 
 export default{
   name : "App",
@@ -13,11 +15,18 @@ export default{
     NavigationBar,
     Timeline,
     AboutMe,
-    ReposGitHub
+    ReposGitHub,
+    Contact
 },
   data(){
     return{
+      year: ''
     }
+  },
+  mounted(){
+    let date = new Date();
+    this.year = date.getFullYear()
+    date = null;
   }
 }
 
@@ -37,9 +46,18 @@ export default{
         <AboutMe></AboutMe>
       </section>
       
-      <section class="section section-3" id="contact">
+      <section class="section section-3" id="repos">
         <ReposGitHub></ReposGitHub>
       </section>
+
+      <section class="section section-4" id="contact">
+        <Contact></Contact>
+      </section>
+
+      <footer class="footer">
+        {{ year }} - Creado y mantenido con ❤️ por <a href="http://www.linkedin.com/in/alejandroquinteroe" target="_blank" class="relevant">@Alejandro Quintero</a> 
+      </footer>
+
     </div>
   </Transition>
 
@@ -48,6 +66,7 @@ export default{
 </template>
 
 <style>
+
 
 h1{
   margin: 0;
@@ -61,14 +80,28 @@ section{
   padding: 24px;
   color: var(--color-font-dark);
   font-family: 'Geomanist';
-  background-color: var(--color-bg-dark) ;
+}
+
+a{
+  color: var(--color-bg-dark);
+}
+
+input,
+textarea,
+button,
+footer{
+  color: var(--color-bg-dark);
+  font-family: 'Geomanist';
+  font-size: 1rem;
+
 }
 
 .color-dark-blue{
   color: var(--color-bg-dark-blue);
 }
 
-.section-2{
+.section-2,
+.section-4{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -76,7 +109,12 @@ section{
 }
 
 .section:not(#home){
-  padding-top: 88px;
+  padding-top: 36px;
+}
+
+.section-4{
+  min-height: max-content;
+  padding-bottom: 5rem;
 }
 
 .paragraph{
@@ -112,4 +150,16 @@ section{
   width: 100%;
 }
 
+footer{
+  background-color: #8ca1bf;
+  text-align: center;
+  padding: 2rem;
+  transition: all .2s;
+}
+
+@media screen and (min-width: 768px) {
+  .section:not(#home){
+    padding-top: 88px;
+  }
+}
 </style>
