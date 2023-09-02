@@ -1,5 +1,6 @@
 {
   "name": "vue-portfolio",
+  "homepage": "https://quinteroalejandro.com",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
