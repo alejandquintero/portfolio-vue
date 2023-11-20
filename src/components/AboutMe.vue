@@ -6,7 +6,7 @@
         </div>
         <div class="grid-item-3 container-about-paragraph">
             <p class="paragraph about__paragraph">
-                👋🏼 ¡Hola! Me llamo Alejandro, actualmente Full Stack Developer con Symfony y AngularJS, me gusta mucho más el Backend y VueJs💚. Soy estudiante de 42 Madrid 🤍, donde, además de aprender, escribir mucho código y divertirme, voy encontrando mi lugar en este mundo.
+                👋🏼 ¡Hola! Me llamo Alejandro, soy Software Developer y estudiante de 42 Madrid 🤍, donde, además de aprender, escribir mucho código y divertirme, voy encontrando mi lugar en este mundo.
             </p>
             <p class="paragraph about__paragraph">
                 Día a día me esfuerzo en crecer y en dar lo mejor de mí, poco a poco voy cumpliendo mis sueños, me gusta lo simple, pero no lo convencional, y, cuando se me presentan retos, no me da miedo enfrentarlos.
@@ -42,10 +42,12 @@
                         jobTitle : "Full Stack Developer",
                         company : "Tigloo",
                         items: [
-                            "Diseño y desarrollos de API REST con PHP 8 y Symfony 5.",
-                            "Desarrollo de aplicaciones webs.",
-                            "Automatización de tareas.",
-                            "Soporte, mantenimiento e implementacion de nuevas funcionalidades en los proyectos.",
+                            "Diseñé y desarrollé una API RESTful con Symfony 5 en PHP 8 y MySQL, enfocándome en un desarrollo escalable. Durante este proyecto, se implementaron prácticas de integración continua y entrega continua (CI/CD).",
+                            "Desarrollé aplicaciones web utilizando Symfony, Web Components en VueJs y SQL Server.",
+                            "Como parte integral del equipo, me encargué del desarrollo de scripts para la automatización de tareas en servidores, mejorando la eficiencia operativa yreduciendo el riesgo de errores manuales.",
+                            "Realicé despliegues a producción desde terminales Linux, gestionando eficientemente el ciclo de vida del software y garantizando la disponibilidad continua de las aplicaciones.",
+							"Contribuí significativamente al mantenimiento de proyectos internos aplicando actualizaciones de código en PHP 5 a PHP 7.",
+							"Participé con el equipo de sistemas en la migración de Servidores Ubuntu configurándolos desde cero."
                         ],
                         logos: [
                             "logos/symfony.svg",
@@ -61,12 +63,9 @@
                         jobTitle : "SQL Developer",
                         company : "Oracls Development",
                         items: [
-                            "Estructuración y modelado de datos.",
-                            "Redactar documentación para los procesos implementados en las BBDD.",
-                            "Desarrollo de querys, functions, scripts, views, stored procedures y triggers de acuerdo a las necesidades de las aplicaciones.",
-                            "Diseñar, crear e implementar nuevas arquitecturas de BBDD de acuerdo con los requerimientos funcionales y de desarrollo",
-                            "Diseñar y mantener los diferentes esquemas y objetos de la base de datos asegurando su estabilidad, rendimiento y fiabilidad.",
-                            "Redactar documentación detallada de los trabajos realizados."
+                            "Estructuré y modelé datos.",
+                            "Desarrollé queries, views, stored procedures y triggers de acuerdo a las necesidades de las aplicaciones.",
+                            "Redacté documentación detallada de los trabajos realizados."
                         ],
                         logos: [
                             "logos/mysql.svg",

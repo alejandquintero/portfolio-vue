@@ -5,7 +5,7 @@
       </div>
       <div class="paragraphs-profile">
         <h1 class="profile-title">Hola<span class="color-dark-blue">.</span><br/> Soy Alejandro</h1>
-        <p class="paragraph">🧑‍💻​ Full Stack Developer en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo</a> y 🧑‍🎓 estudiante en <a href="https://www.42madrid.com/" target="_blank" class="relevant color-dark-blue">@42Madrid</a>. Amo el café ☕​, me gusta el Backend y curiosamente me puedo divertir con CSS.😅​.</p>
+        <p class="paragraph">🧑‍💻​ Software Developer en <a href="https://www.tigloo.es/" target="_blank" class="relevant color-dark-blue">@Tigloo</a> y 🧑‍🎓 estudiante en <a href="https://www.42madrid.com/" target="_blank" class="relevant color-dark-blue">@42Madrid</a>. Me inclino al Backend y curiosamente me puedo divertir con CSS.😅​.</p>
       </div>
     </article>
 </template>
