@@ -39,7 +39,7 @@
                     {
                         startDate : "2022",
                         endDate: "Ahora",
-                        jobTitle : "Full Stack Developer",
+                        jobTitle : "Software Developer",
                         company : "Tigloo",
                         items: [
                             "Diseñé y desarrollé una API RESTful con Symfony 5 en PHP 8 y MySQL, enfocándome en un desarrollo escalable. Durante este proyecto, se implementaron prácticas de integración continua y entrega continua (CI/CD).",
